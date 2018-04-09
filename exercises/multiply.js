@@ -11,10 +11,10 @@
 // Your code :
 
 const multiply = (a,b) =>{
-	
+
 	if (a >= 0){
 		const count = a
-	
+
 		let result = 0
 		let i = 0
 		while (i < count)
@@ -27,7 +27,7 @@ const multiply = (a,b) =>{
 	else
 	{
 		const count = -a
-	
+
 		let result = 0
 		let i = 0
 		while (i < count)
@@ -55,4 +55,5 @@ assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
 assert.strictEqual(multiply(2, 5), 10 )
+assert.strictEqual(multiply(2, 6), 12 )
 // End of tests */
