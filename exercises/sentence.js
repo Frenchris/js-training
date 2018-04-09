@@ -1,10 +1,15 @@
 'use strict'
 
 /*
- * Create a `sentence` function that takes an array of strings
- * and return a string of all the element separated by a space
+ * Create a function `sentence` that takes an array of strings
+ * and return a strings of all the element separated by spaces
  *
  */
+
+const sentence = (arr) => {
+	let result = arr.join(' ')
+	return(result)
+}
 
 
 //* Begin of tests

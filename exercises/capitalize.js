@@ -1,12 +1,29 @@
 'use strict'
 
 /*
- * Create a `capitalize` function that takes a string
- * and transforms it to upper case only for the first letter,
- * and in lowercase for the rest of the string
+ * Create a function `capitalize` takes a string
+ * and transform to upper case only the first letter
  *
  */
+const capitalize = (str) => {
+	//string mis en lowercase//
+	let result = str.toLowerCase()
+	
+	//premiere lettre sauvegarder en Majuscule dans un autre emplacement//
+	let firstLetterStored = result[0].toUpperCase()
+	
+	//enlevement de la premiere lettre de la string//
+	
+	let strDivided = result.split('')
+	let firstLetterRemoved = strDivided.shift()
+	let restOfString = strDivided.join('')
 
+	//fusion de la lettre Majuscule et le reste de la string//
+
+	let finalResult = firstLetterStored + restOfString
+
+return(finalResult)
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -10,6 +10,35 @@
 
 // Your code :
 
+const multiply = (a,b) =>{
+	
+	if (a >= 0){
+		const count = a
+	
+		let result = 0
+		let i = 0
+		while (i < count)
+		{
+			result = result + b
+			i++
+		}
+		return(result)
+	}
+	else
+	{
+		const count = -a
+	
+		let result = 0
+		let i = 0
+		while (i < count)
+		{
+			result = result + b
+			i++
+		}
+		return(-result)
+	}
+}
+
 //* Begin of tests
 const assert = require('assert')
 
@@ -25,4 +54,5 @@ assert.strictEqual(multiply(0, 0), 0)
 assert.strictEqual(multiply(123, -22), -2706)
 assert.strictEqual(multiply(-22, 123), -2706)
 assert.strictEqual(multiply(-22, -123), 2706)
+assert.strictEqual(multiply(2, 5), 10 )
 // End of tests */

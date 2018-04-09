@@ -1,11 +1,22 @@
 'use strict'
 
 /*
- * Create a `total` function that takes an array of numbers
- * and return the total
+ * Create a function `total` that takes an array on numbers
+ * and return it's total
  *
  */
-
+const total = (arr) =>{
+	const arrLength = arr.length
+	
+	let result = 0
+	let i = 0
+	while (i < arrLength)
+	{
+		result = result + arr[i]
+		i++
+	}
+	return(result)
+}
 
 //* Begin of tests
 const assert = require('assert')

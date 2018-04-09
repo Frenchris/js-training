@@ -1,10 +1,14 @@
 'use strict'
 
 /*
- * Create a `words` function that takes a string
+ * Create a function `words` that take a string
  * and return an array of each words using space as a delimiter
  *
  */
+ const words = (str) => {
+ 	let result = str.split(" ")
+ 	return(result)
+ }
 
 
 //* Begin of tests

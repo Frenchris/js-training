@@ -1,13 +1,15 @@
 'use strict'
 
 /*
- * Create a constant variable named `escapeStr` that contains
- * the following specials characters: /\`"'
+ * Create a constant variables named `escapeStr` that contains specials
+ * characters: /\`"'
  *
  * @notions Primitive and Operators, Variables
  */
 
 // Your code :
+
+const escapeStr = "\'\"\`\/\\"
 
 //* Begin of tests
 const assert = require('assert')
